@@ -1,0 +1,103 @@
+Fundamentals of Generative AI
+
+- Understand generative AI's place in the development of artificial intelligence.
+- Understand language models and their role in intelligent applications.
+- Describe examples of copilots and good prompts.
+
+ Key Points Summary
+
+1. Generative AI Overview
+    - Increasing awareness of generative AI technologies like Microsoft Copilot.
+    - Arthur C. Clarke's observation: advanced technology is indistinguishable from magic.
+    - Generative AI produces human-like original content, including poetry, prose, and code.
+2. Definition of Generative AI
+    - AI that mimics human behavior through interactions without explicit instructions.
+    - Capable of generating unique content in various forms (text, images, code).
+3. Natural Language Processing (NLP)
+    - Natural Language Generation (NLG) examples include writing cover letters or creating logos.
+    - Code generation examples like writing Python functions.
+4. Language Models
+    - Language models perform NLP tasks using machine learning techniques.
+    - Types of tasks include classification, summarization, semantic similarity comparison, and text generation.
+5. Transformer Models
+    - Latest language models based on transformer architecture for NLP tasks.
+    - Trained on large text corpora to understand semantic relationships between words.
+    - Composed of an encoder block (for input representation) and a decoder block (for output generation).
+6. Tokenization
+    - Process of breaking text into tokens (individual words or subwords).
+    - Each token is assigned a unique identifier.
+7. Embeddings
+    - Contextual vectors (embeddings) represent semantic attributes of tokens.
+    - Similar words have similar vector representations.
+8. Attention Mechanism
+    - Key component in transformer architecture.
+    - Evaluates relationships between tokens and assigns weights based on relevance.
+9. Using Language Models
+    - Organizations can fine-tune existing base models instead of training from scratch.
+    - Microsoft Azure OpenAI services offer pre-trained models and resources.
+10. Types of Language Models
+    - Large Language Models (LLMs): Trained on diverse datasets, capable of broad language generation.
+    - Small Language Models (SLMs): More focused datasets, typically less complex but effective for specific tasks.
+11. Copilot Definition
+    - Digital assistants integrated into applications providing contextual support.
+    - Microsoft Copilot integrates with various Microsoft applications.
+12. Adoption Levels for Copilot
+    - Ready-to-use Copilots: E.g., Microsoft 365 Copilot for immediate productivity.
+    - Extensions: Customizing Copilot for specific business processes.
+    - Custom Development: Creating unique experiences or features for applications.
+
+13. Microsoft Copilot Key Features
+
+- Integration Across Applications: Microsoft Copilot enhances productivity across various Microsoft applications, allowing businesses to leverage AI capabilities while protecting data.
+- Web Browsing with AI:
+    - Use Copilot in Microsoft Edge for research and content creation.
+    - Generate lists of industry opportunities or obtain detailed search results.
+- Microsoft 365 Integration:
+    - Word: Create and enhance documents using natural language prompts.
+    - PowerPoint: Generate presentations based on content from documents or emails.
+    - Outlook: Summarize emails and manage schedules effectively.
+- AI in Business Processes:
+    - Dynamics 365 Customer Service: Analyze support tickets and provide solutions quickly.
+    - Dynamics 365 Sales: Retrieve relevant customer and industry information to facilitate sales.
+    - Dynamics 365 Supply Chain: Assess the impact of purchase order changes and provide recommendations.
+- AI-Driven Data Analysis:
+    - Microsoft Fabric: Automatically generate code for data analysis and visualization.
+    - Power BI: Analyze data and suggest visualizations for reports.
+- IT Infrastructure and Security:
+    - Security Copilot: Assist security experts in evaluating and responding to threats.
+    - Azure Copilot: Integrate with Azure services to aid infrastructure management.
+- Software Development with AI:
+    - GitHub Copilot: Enhance developer productivity through code analysis, documentation, and natural language-based coding.
+1. Prompt Engineering Considerations
+- Quality of Responses: Depends on both the language model and the specificity of user prompts.
+- Crafting Effective Prompts:
+    - Begin with a clear objective.
+    - Provide context and specific information sources.
+    - Set clear expectations for the response.
+    - Iterate based on previous prompts and responses.
+1. Tools for Customization
+- Copilot Studio: A low-code development environment for creating Copilot experiences tailored to your organization.
+- Azure AI Studio: A platform for professional developers to customize and deploy AI models with full control.
+
+For further details, visit the respective links for [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio) and [Azure AI Studio](https://azure.microsoft.com/products/ai-studio/).
+
+Explore Microsoft Copilot : https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/7-exercise
+
+Notes : 
+
+- Microsoft Azure AI Studio is designed as a unified development portal for professional software developers to allow for full customization of language models.
+- Customer service agents can use Copilot in Dynamics 365 Customer Service to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts.
+- Large language models use deep learning to process and understand natural language on a massive scale.
+
+SUMMARY 
+
+Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. This module explored how language models power generative AI and how copilot brings generative AI capabilities to your desktop. You learned the basics of Large Language Models (LLMs) and Small Language Models (SLMs), and the underlying transformer architecture of advanced language models.
+
+The main takeaways from this module include understanding the role of generative AI in creating AI assistants or copilots that provide contextualized support for common tasks. Often, generative AI is integrated into chat applications like Microsoft Copilot to interpret natural language inputs and generate suitable responses. You learned about the three levels of copilot adoption and the various applications of Microsoft Copilot across different Microsoft applications. The module also highlighted the importance of improving the quality of responses from generative AI. Finally, you have been introduced to two tools offered by Microsoft for customizing or developing custom copilots: Copilot Studio and Azure AI Studio.
+
+More reading:
+
+- [Use Microsoft Copilot](https://copilot.microsoft.com/)
+- [Learn about Copilot for Microsoft 365](https://adoption.microsoft.com/copilot/)
+- [Try out Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/)
+- [Try out Microsoft AI Studio](https://azure.microsoft.com/products/ai-studio/)

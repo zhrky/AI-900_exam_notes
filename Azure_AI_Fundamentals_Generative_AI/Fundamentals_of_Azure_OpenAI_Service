@@ -1,0 +1,103 @@
+Fundamentals of Azure OpenAI Service
+
+
+- Describe Azure OpenAI workloads and access the Azure OpenAI Service
+- Understand generative AI models
+- Understand Azure OpenAI's language, code, and image capabilities
+- Understand Azure OpenAI's responsible AI practices and limited access policies
+
+ Introduction
+
+Understanding the latest innovations in artificial intelligence (AI) in news and leveraging the opportunities they bring is crucial. The ethical use of AI is also a critical topic. Today, AI models are commercially utilized and adopted for production. For instance, Microsoft's Azure AI services have been meeting business needs for many years. OpenAI has developed innovative AI applications like ChatGPT and DALL-E.
+
+ Azure OpenAI Service
+
+The Azure OpenAI Service allows users to create enterprise-level solutions with OpenAI models. This service supports many functions, including text summarization, code suggestions, and image generation.
+
+ Features of OpenAI Models
+
+OpenAI models are categorized into three main feature areas:
+
+1. Natural Language Generation: Text summarization, suggesting alternative expressions.
+2. Code Generation: Code translation, debugging.
+3. Image Generation: Creating images from text descriptions.
+
+ Generative AI
+
+Generative AI encompasses AI models that can produce new content. OpenAI's models are examples of generative AI that can generate language, code, and images.
+
+ Usage of Azure OpenAI Service
+
+Microsoft aims to achieve three main objectives with the Azure OpenAI Service:
+
+1. Creating enterprise-level applications.
+2. Distributing OpenAI model features with Azure AI products.
+3. Supporting OpenAI workloads.
+
+The Azure OpenAI Service consists of four components:
+
+1. Pre-trained AI models.
+2. Customization features.
+3. Tools to detect and mitigate harmful use cases.
+4. Role-based access control and private networks.
+
+ Azure OpenAI Workloads
+
+Azure OpenAI supports various workloads, including natural language generation, text completion, code generation, and image creation.
+
+ Relationship with Azure AI Services
+
+Azure AI services are tools aimed at solving specific AI workloads. There is an overlap between Azure AI Language services and the Azure OpenAI Service; the choice of which to use depends on the use case.
+
+ Azure OpenAI Studio
+
+Azure OpenAI Studio allows users to create and deploy AI models. In this studio, GPT-4 and GPT-3.5 models for natural language and code, as well as DALL-E image generation models, can be utilized.
+
+ GPT Models and Natural Language Processing
+
+GPT models excel at understanding and generating natural language. They can produce text, code, and images based on prompts. GPT models can be used for various tasks such as text summarization, classification, name generation, translation, and answering questions.
+
+ OpenAI Code Generation
+
+GPT models can generate code from natural language or code snippets. They have capabilities for writing and debugging code in languages like Python. GitHub Copilot integrates the power of OpenAI Codex into developer environments.
+
+ OpenAI Image Generation
+
+DALL-E models can create new images from text descriptions or base images. They can change styles, add or remove elements, and generate image variations.
+
+ Responsible AI Principles
+
+The ethical use of AI systems is vital. Azure OpenAI must adhere to Microsoft's six AI principles: Fairness, Reliability, Privacy, Inclusiveness, Accountability, and Transparency. These principles ensure the safe and equitable use of AI systems.
+
+ Responsible AI Principles (Continued)
+
+Microsoft's AI principles are designed to ensure that AI systems have a positive impact on society. These principles are:
+
+1. Fairness: AI systems must provide fair and equal opportunities for everyone. Neutral training data helps minimize biases.
+2. Reliability: AI systems should be reliable and function as expected. The accuracy and dependability of these systems should be continuously evaluated.
+3. Privacy: Protecting user data is essential. AI systems must respect user privacy and manage personal data securely.
+4. Inclusiveness: AI applications should consider the needs of diverse user groups and be accessible. Diversity contributes to the development of better solutions.
+5. Accountability: AI systems must be transparent and accountable. Users should be informed about how the systems work and what data they use.
+6. Transparency: The decision-making processes of AI systems should be clear. Users should understand how and why the systems reach certain outcomes.
+
+Explore Azure OpenAI Service :   https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/8a-exercise-openai
+
+Notes :
+
+- Microsoft's Responsible AI principle, fairness, says AI systems shouldn't make decisions that discriminate or bias a group or individual. Harmful use of Azure OpenAI isn't permitted.
+- Transparency Notes that share how technology is built and asks users to consider its implications.
+- Codex :
+- OpenAI is a research company that developed ChatGPT, a chatbot that uses generative AI models. Azure OpenAI provides access to many of OpenAI's AI models.
+
+SUMMARY 
+
+OpenAI Service provides access to generative AI models.
+
+In this module, you also learned how to:
+
+- Describe Azure OpenAI workloads and how to access the Azure OpenAI Service
+- Understand generative AI models
+- Understand Azure OpenAI's language, code, and image capabilities
+- Understand Azure OpenAI's Responsible AI practices and Limited Access Policy
+
+To continue learning about Azure OpenAI and find resources for implementation, you can check out the [documentation on Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai) and the [Develop AI solutions with Azure OpenAI Learning Path](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai).

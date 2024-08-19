@@ -1,0 +1,58 @@
+Fundamentals of Responsible Generative AI
+
+- Describe an overall process for responsible generative AI solution development
+- Identify and prioritize potential harms relevant to a generative AI solution
+- Measure the presence of harms in a generative AI solution
+- Mitigate harms in a generative AI solution
+- Prepare to deploy and operate a generative AI solution responsibly
+
+ Summary of Responsible Generative AI Guidelines
+
+- Generative AI Impact:
+    - Powerful technology for creating human-like content.
+    - Requires responsible practices to mitigate risks.
+- Four-Stage Process:
+    1. Identify Potential Harms:
+        - Assess risks related to offensive, inaccurate, or harmful content.
+        - Use documentation and assessments (e.g., Microsoft Responsible AI Impact Assessment Guide).
+    2. Measure Potential Harms:
+        - Create baseline measurements of harmful outputs.
+        - Develop diverse input prompts and evaluate outputs based on defined harm criteria.
+    3. Mitigate Potential Harms:
+        - Model Layer: Choose and fine-tune appropriate models.
+        - Safety System Layer: Use content filters and abuse detection.
+        - Metaprompt Layer: Design prompts to encourage safe outputs.
+        - User Experience Layer: Implement UI constraints and transparent documentation.
+    4. Operate Responsibly:
+        - Conduct compliance reviews (legal, privacy, security).
+        - Plan phased delivery and incident response strategies.
+        - Track user feedback and telemetry data for ongoing improvements.
+- Testing and Validation:
+    - Employ "red team" testing to uncover vulnerabilities.
+    - Document and share findings with stakeholders.
+- Continuous Improvement:
+    - Retest and compare outputs after implementing mitigations.
+    - Engage in periodic manual testing alongside automation.
+
+Explore content filters in Azure OpenAI : https://learn.microsoft.com/en-us/training/modules/responsible-generative-ai/7-exercise-content-filters
+
+Notes : 
+
+- An AI Impact Assessment guide documents the expected use of the system and helps identify potential harms.
+- An AI Impact Assessment does not indemnify you from responsibility for harm
+- Content filters enable you to suppress harmful content at the Safety System layer.
+- An initial release to a restricted user base enables you to minimize harm by gather feedback and identifying issues before broad release.
+- A phased delivery plan doesn't eliminate the need to identify, measure, and mitigate potential harms.
+
+ consider a phased delivery plan : 
+
+indemnify 
+
+SUMMARY 
+
+Generative AI requires a responsible approach to prevent or mitigate the generation of potentially harmful content. You can use the following practical process to apply responsible AI principles for generative AI:
+
+1. Identify potential harms relevant for your solution.
+2. Measure the presence of harms when your system is used.
+3. Implement mitigation of harmful content generation at multiple levels of your solution.
+4. Deploy your solution with adequate plans and preparations for responsible operation.
