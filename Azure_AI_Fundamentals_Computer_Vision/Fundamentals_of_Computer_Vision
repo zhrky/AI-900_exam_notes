@@ -1,0 +1,214 @@
+
+Here's the translation of your text into English:
+
+Intro
+
+AI apps enable computers to see and understand the world.
+
+The ability to process images (live camera footage, digital photos, and videos) is fundamental to creating software that mimics human visual perception.
+
+Images and image processing
+
+Images as pixel arrays: To a computer, an image is an array of numeric pixel values.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/78d75972-443e-443d-8ac5-3a6e0e94f7c5/Untitled.png)
+
+
+The array consists of seven rows and seven columns, representing the pixel values for a 7x7 pixel image (which is known as the image's resolution). Each pixel has a value between 0 (black) and 255 (white), with values between these bounds representing shades of gray. The image represented by this array looks similar to the following (magnified) image:
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/4a758135-b4d4-47f8-8241-2b1f1b548412/Untitled.png)
+
+This image is two-dimensional (x and y).
+
+In reality, most digital images are multidimensional and consist of three layers (known as channels) that represent red, green, and blue (RGB) color hues.
+
+Red:
+150 150 150 150 150 150 150
+
+150 150 150 150 150 150 150
+150 150 255 255 255 150 150
+150 150 255 255 255 150 150
+150 150 255 255 255 150 150
+150 150 150 150 150 150 150
+150 150 150 150 150 150 150
+
+Green:
+0 0 0 0 0 0 0
+
+0 0 0 0 0 0 0
+0 0 255 255 255 0 0
+0 0 255 255 255 0 0
+0 0 255 255 255 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+
+Blue:
+255 255 255 255 255 255 255
+
+255 255 255 255 255 255 255
+255 255 0 0 0 255 255
+255 255 0 0 0 255 255
+255 255 0 0 0 255 255
+255 255 255 255 255 255 255
+255 255 255 255 255 255 255
+
+Result:
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/51b4b2e6-2f0b-405c-a7e7-fefc98fdca3b/Untitled.png)
+
+
+The purple squares are represented by the combination:
+
+Red: 150
+Green: 0
+Blue: 255
+
+Using filters to process images
+
+Image Processing Filters: Filters modify pixel values to create visual effects.
+
+Filter Kernels: Filters are defined by arrays of pixel values, e.g., a 3x3 kernel:
+
+
+-1 -1 -1
+-1  8 -1
+-1 -1 -1
+
+Convolution Process:
+
+The kernel is convolved across the image.
+For each 3x3 patch, calculate a weighted sum.
+Assign the result to a new image.
+Example Calculation:
+
+Apply the kernel to the top-left patch.
+Multiply each pixel value by the corresponding kernel weight.
+Sum the results, e.g., the result (-255) becomes the first value in the new array.
+Move the kernel one pixel to the right and repeat.
+Pixel Value Adjustment:
+
+Results are adjusted to fit within the 0-255 pixel range.
+Edge pixels use padding values (often 0) due to the filter shape.
+Resulting Image:
+
+The new array represents the transformed image.
+The example filter highlights edges in the image.
+Convolutional Filtering: This type of image processing is called convolutional filtering.
+
+Laplace Filter: The example filter is a Laplace filter, used to highlight edges.
+
+Other Filters: Many other filters can create effects like blurring, sharpening, and color inversion.
+
+Machine learning for computer vision
+
+Image Processing and Machine Learning:
+
+Filters can be used for effects in image editing software and image processing tasks.
+The goal is often to extract meaning or actionable insights from images, requiring machine learning models trained to recognize features based on large volumes of images.
+Convolutional neural networks (CNNs)
+
+Definition: A type of deep learning architecture for image processing.
+
+Function: Extract numerical feature maps from images using filters, then feed feature values into the model for label prediction.
+
+Example: Training a CNN to classify fruit images (e.g., apple, banana, orange).
+
+Training Process:
+
+Filters start with randomly assigned weights.
+Model predictions are evaluated against known labels.
+Filter weights are adjusted to improve accuracy.
+The model learns the best filter weights to extract relevant features.
+
+CNN Architecture:
+
+Uses multiple convolutional filter layers and additional layers to process feature values.
+Simplified example focuses on key concepts of using filters to extract numerical features and predict image labels.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/ec32097d-0647-412e-a55d-55c80939dbf2/Untitled.png)
+
+Transformers and multi-modal models
+
+Transformers: Another neural network architecture type, advanced for natural language processing (NLP).
+Processes large volumes of data.
+Encodes language tokens as vector embeddings representing semantic attributes.
+Creates a semantic language model for tasks like text analysis, translation, and generation.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/b4be39e2-e8a7-4ec5-a180-19648c769ffb/Untitled.png)
+
+Multimodal Models: Combines image and language data.
+
+Uses image encoders to extract features based on pixel values.
+Combines with text embeddings from language encoders.
+Example: Microsoft Florence model, trained on large volumes of captioned images, contains both language and image encoders.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/e5292e05-e606-4996-8558-e44cf20931b4/Untitled.png)
+
+
+Applications:
+
+Image classification: Determining image categories.
+Object detection: Finding individual objects within an image.
+Caption generation: Creating appropriate captions for images.
+Tagging: Compiling relevant text labels for images.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/99c69352-75dc-4ab0-917e-72eb1d68e50b/Untitled.png)
+
+
+**Azure AI Vision** 
+
+1. **Training Custom Machine Learning Models**:
+    - **Complex Architecture**: Image processing models can be complex.
+    - **Resources Needed**: Requires significant training images and computational power.
+2. **Azure AI Vision Service**:
+    - **Based on Microsoft Florence**: Provides powerful pre-built and customizable image processing models.
+    - **Ease of Use**: Allows for quick and easy creation of advanced image processing solutions.
+    - **Customization**: Supports creating custom models using your own images.
+3. **Azure AI Vision Resources**:
+    - **Azure AI Vision Resource**: Dedicated to Azure AI Vision service.
+    - **Azure AI Services Resource**: General resource including Azure AI Vision and other Azure AI services for simplified management and development.
+4. **Image Analysis Capabilities**:
+    - **OCR (Optical Character Recognition)**: Extracts text from images.
+    - **Captions and Descriptions**: Generates human-readable sentences describing detected objects.
+    - **Common Object Detection**: Identifies thousands of common objects in images with confidence scores.
+    - **Visual Feature Tagging**: Suggests tags for images based on content.
+5. **Using Azure AI Vision Studio**:
+    - **Multiple Image Analysis Tasks**: Supports various tasks like OCR, generating captions, object detection, and visual feature tagging.
+    
+    **OCR (Optical Character Recognition)**:
+    
+    - **Text Extraction**: Analyzes images to extract text, e.g., nutrition labels.
+    
+    **Generating Captions and Descriptions**:
+    
+    - **Image Analysis**: Evaluates detected objects to create readable sentences.
+    
+    **Common Object Detection**:
+    
+    - **Object Identification**: Identifies common objects with confidence scores and bounding box coordinates (top, left, width, height).
+    
+    **Visual Feature Tagging**:
+    
+    - **Tag Suggestions**: Proposes tags for images, useful for indexing and searching images by attributes or content.
+    
+    **Training Custom Models**:
+    
+    - **Custom Model Training**: Allows training custom models for image classification or object detection.
+    - **Pre-trained Base Model**: Builds custom models on a pre-trained base model, requiring relatively few training images.
+    
+    **Image Classification**:
+    
+    - **Category Prediction**: Predicts the category or class of an image.
+    
+    **Object Detection**:
+    
+    - **Object Identification and Classification**: Detects and classifies objects in images, returns bounding box coordinates.
+    - **Custom Object Detection Models**: Can train custom models using your own images.
+
+You use this link exercising this part https://learn.microsoft.com/en-us/training/modules/analyze-images-computer-vision/4-exercise
+
+Notes : **.**
+
+- **Azure AI Vision returns objects with a bounding box to indicate their location in the image.**
+- **An Azure AI Services resource supports both Azure AI Vision and Azure AI Language.**
+- **Pixels are numeric values that represent shade intensity for points in the image.**

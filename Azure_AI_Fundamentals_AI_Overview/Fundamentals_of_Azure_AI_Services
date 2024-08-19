@@ -1,0 +1,38 @@
+
+Fundamentals of Azure AI Services
+
+Azure AI services offer a portfolio of artificial intelligence features that unlock automation for various workloads, including language, image processing, intelligent search, content creation, and more. These services are easily applicable and do not require expert AI knowledge.
+
+The Azure AI Content Safety service can be used to detect harmful content within text or images, including violent or hateful content, and report on its severity.
+
+The Azure AI Language service can be used to summarize text, classify information, or extract key phrases.
+
+The Azure AI Speech service provides powerful speech-to-text and text-to-speech capabilities, allowing speech to be accurately transcribed into text, or text to be converted into natural-sounding voice audio.
+
+Azure AI services are based on three principles that dramatically improve speed-to-market:
+
+- Prebuilt and ready to use
+- Accessed through APIs
+- Available on Azure
+
+Azure AI Vision, Azure AI Speech, and Azure OpenAI offer customization features that allow you to add data to existing models.
+
+Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information required for one component to use the services of another.
+
+AI services are cloud-based and accessed through the Azure resource. This means they are managed in the same way as other Azure services, such as Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or managed database services. The Azure platform and Resource Manager provide a consistent framework for all Azure services, from resource creation or deletion to availability and billing.
+
+There are two types of AI service resources: multi-service or single-service.
+
+Azure AI services are user-friendly AI features that are available as resources on the Azure platform. Azure AI service features include Language, Speech, Image Processing, Decision, Search, and Azure OpenAI.
+
+In this module, we have used several different terms related to AI services. Here is a summary:
+
+- **API** – Application Programming Interfaces (APIs) enable software components to communicate so that one can be updated without stopping the operation of the other.
+- **Artificial Intelligence (AI)** – Computer programs that respond in ways typically associated with human reasoning, learning, and thought.
+- **Azure AI Services**: A portfolio of AI services that can be quickly and easily integrated into applications without requiring specialized knowledge. **Azure AI Services** also refers to multi-service resources created in the Azure portal that provide access to several different Azure AI services with a single key and endpoint.
+- **Endpoint**: The location of a resource, such as an Azure AI service.
+- **Key**: A special string used to authenticate a request.
+- **Machine Learning** – The ability of computer programs to learn from large amounts of data in a process known as "training."
+- **Multi-Service Resource**: An AI service resource created in the Azure portal that provides access to a package of AI services.
+- **Single-Service Resource**: A resource created in the Azure portal that provides access to a single Azure AI service, such as Speech, Image Processing, or Language. Each Azure AI service has a unique key and endpoint.
+- **RESTful API**: A scalable web application programming interface used to access Azure AI services.

@@ -1,0 +1,106 @@
+
+Fundamentals AI Concepts
+
+Key Workloads Include:
+
+- **Machine learning** - This is often the foundation for an AI system, and is the way we "teach" a computer model to make predictions and draw conclusions from data.
+- **Computer vision** - Capabilities within AI to interpret the world visually through cameras, video, and images.
+- **Natural language processing** - Capabilities within AI for a computer to interpret written or spoken language, and respond in kind.
+- **Document intelligence** - Capabilities within AI that deal with managing, processing, and using high volumes of data found in forms and documents.
+- **Knowledge mining** - Capabilities within AI to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+- **Generative AI** - Capabilities within AI that create original content in a variety of formats including natural language, image, code, and more.
+
+ML
+
+Microsoft Azure provides the **Azure Machine Learning** service - a cloud-based platform for creating, managing, and publishing machine learning models. **Azure Machine Learning Studio** offers multiple authoring experiences such as:
+
+- **Automated machine learning**: this feature enables non-experts to quickly create an effective machine learning model from data.
+- **Azure Machine Learning designer**: a graphical interface enabling no-code development of machine learning solutions.
+- **Data metric visualization**: analyze and optimize your experiments with visualization.
+- **Notebooks**: write and run your own code in managed Jupyter Notebook servers that are directly integrated in the studio.
+
+Computer Vision is an area of AI that deals with visual processing. Seeing AI, great example of the power of computer Vision. Designed for blind and low vision community.
+
+**Computer Vision solutions, based on machine learning, take visuals such as camera feeds, video, or images as input.**
+
+- **Image Classification:** This involves classifying images based on their content. For example, in a traffic monitoring solution, you can use an image classification model to categorize images by vehicle type, such as taxis, buses, and bicycles.
+- **Object Detection:** This technique is trained to classify specific objects within an image and identify their locations with bounding boxes. For instance, in a traffic monitoring solution, object detection can be used to locate different vehicle types.
+- **Semantic Segmentation:** An advanced machine learning technique where pixels in an image are classified according to the objects they belong to. For example, in a traffic monitoring solution, "masking" layers can be applied to traffic images to highlight vehicles of certain colors.
+- **Image Analysis:** This involves extracting information from images using advanced analysis techniques combined with machine learning models. It can help create catalogs with "labels" and even generate descriptive captions summarizing the scene shown in the image.
+- **Face Detection, Analysis, & Recognition:** A specialized form of object detection that finds human faces in images. This can be combined with classification and facial geometry analysis techniques to recognize individuals based on facial features.
+- **OCR (Optical Character Recognition):** A technique used to detect and read text within images. OCR can be used to read text from photos (such as road signs or store windows) or extract information from scanned documents like letters, invoices, or forms.
+
+Microsoft's **Azure AI Vision** to develop computer vision solutions. The service features are available for use and testing in the **Azure Vision Studio** and other programming languages. Some features of Azure AI Vision include:
+
+- **Image Analysis**: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
+- **Face**: capabilities that enable you to build face detection and facial recognition solutions.
+- **Optical Character Recognition (OCR)**: capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
+
+NLP
+
+NLP (Nature Language Processing)  yazılı ve sözlü dili anlayan AI alanıdır.
+
+NLP enables you to create software that can:
+
+- Analyze and interpret text in documents, email messages, and other sources.
+- Interpret spoken language, and synthesize speech responses.
+- Automatically translate spoken or written phrases between languages.
+- Interpret commands and determine appropriate actions.
+
+Microsoft's **Azure AI Language** to build natural language processing solutions. Some features of Azure AI Language include understanding and analyzing text, training conversational language models that can understand spoken or text-based commands, and building intelligent applications.
+
+Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more
+
+Document Intelligence
+
+**Document Intelligence** is the area of AI that deals with managing, processing, and using high volumes of a variety of data found in forms and documents. Document intelligence enables you to create software that can automate processing for contracts, health documents, financial forms and more
+
+Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. You can use prebuilt models to add intelligent document processing for invoices, receipts, health insurance cards, tax forms, and more.
+
+use Azure AI Document Intelligence to create custom models with your own labeled datasets. The service features are available for use and testing in the **Document Intelligence Studio** and other programming languages.
+
+**Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store.
+
+One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes. The indexes can then be used for internal only use, or to enable searchable content on public facing internet assets.
+
+Azure AI Search can utilize the built-in AI capabilities of Azure AI services such as image processing, document intelligence, and natural language processing to extract data. The product's AI capabilities makes it possible to index previously unsearchable documents and to extract and surface insights from large amounts of data quickly.
+
+Generative AI describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. Generative AI applications take in natural language input, and return appropriate responses in a variety of formats including natural language, image, code, and audio.
+
+In MS Azure
+
+Use the **Azure OpenAI service** to build generative AI solutions. Azure OpenAI Service is Microsoft's cloud solution for deploying, customizing, and hosting generative AI models. It brings together the best of OpenAI's cutting edge models and APIs with the security and scalability of the Azure cloud platform.
+
+Azure OpenAI supports many foundation model choices that can serve different needs. The service features are available for use and testing in the **Azure OpenAI Studio** and other programming languages.
+
+Use Azure Open AI Studio use interface to manage, develop, & customize gen. AI models.
+
+Interface :
+
+!https://learn.microsoft.com/en-us/training/wwl-data-ai/get-started-ai-fundamentals/media/azure-openai-studio.png
+
+Artificial Intelligence is a powerful tool that can be used to greatly benefit the world. However, like any tool, it must be used responsibly.
+
+Challenge & Risk
+
+| Challenge or Risk | Example |
+| --- | --- |
+| Bias can affect results | A loan-approval model discriminates by gender due to bias in the data with which it was trained |
+| Errors may cause harm | An autonomous vehicle experiences a system failure and causes a collision |
+| Data could be exposed | A medical diagnostic bot is trained using sensitive patient data, which is stored insecurely |
+| Solutions may not work for everyone | A home automation assistant provides no audio output for visually impaired users |
+| Users must trust a complex system | An AI-based financial tool makes investment recommendations - what are they based on? |
+| Who's liable for AI-driven decisions? | An innocent person is convicted of a crime based on evidence from facial recognition – who's responsible? |
+
+**Responsible AI**
+
+AI software development is guided by a set of six principles, designed to ensure that AI applications provide amazing solutions to difficult problems without any unintended negative consequences.
+
+https://learn.microsoft.com/tr-tr/training/modules/get-started-ai-fundamentals/8a-understand-responsible-ai
+
+- Fairness
+- Reliability & Safety
+- Privacy & Security
+- Inclusiveness
+- Transparency
+- Accountability

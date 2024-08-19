@@ -1,0 +1,184 @@
+Fundamentals of ML
+
+Machine learning aims to create a predictive model that can be incorporated into a software application or service using data.
+
+The core idea is to use data from past observations to predict unknown outcomes or values.
+
+Essentially, a machine learning model is a software application that encapsulates a function to compute an output value based on one or more input values.
+
+The process of defining that function is known as training. After the function has been defined, you can use it to predict new values in a process called inferencing.
+
+Types of ML
+
+![Screenshot 2024-06-22 at 18.15.00.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/03b94892-6eea-47b4-880e-34bfcb3a7a8d/Screenshot_2024-06-22_at_18.15.00.png)
+
+Feature = feature, Label = label
+
+Supervised Machine Learning
+Definition: Training data contains both features and known label values. Models learn from past data to make predictions about future situations.
+Regression:
+Definition: The predicted label is a numerical value.
+Examples:
+Number of ice creams sold based on temperature, rainfall, and wind speed.
+House prices based on square footage, number of bedrooms, and location.
+Fuel efficiency of a vehicle based on engine size, weight, and dimensions.
+Classification:
+Binary Classification: Chooses between two possibilities.
+Examples:
+Diabetes risk based on weight, age, and blood sugar levels.
+Credit default based on income, credit history, and age.
+Marketing response based on demographic attributes and past purchases.
+Multi-Class Classification: Chooses from multiple classes.
+Examples:
+Penguin species (Adelie, Gentoo, Chinstrap).
+Movie genre (comedy, horror, romance).
+Unsupervised Machine Learning
+Definition: Training data contains only feature values. There are no labels.
+Clustering:
+Definition: Groups observations based on their features.
+Examples:
+Grouping flowers by size and number of petals.
+Grouping customers by demographic attributes and purchasing behavior.
+Summary
+Supervised Learning: Establishes relationships between features and labels; makes predictions using regression and classification methods.
+Unsupervised Learning: Finds similarities between features; creates groups using clustering methods.
+REGRESSION
+Summary
+
+Data Splitting: Create training and validation sets.
+Model Training: Train the model using an algorithm.
+Model Validation: Test the model with the validation set.
+Performance Evaluation: Measure prediction accuracy.
+Improvement: Iterate until acceptable accuracy is achieved.
+The training process for a regression model involves several key steps:
+
+Data Splitting: Split the training data into a training set and a validation set.
+Model Training: Use an algorithm, such as linear regression, to fit the training data to a model.
+Model Validation: Use the validation data to test the model by predicting labels for the features.
+Evaluation: Compare the predicted labels to the actual labels in the validation set and calculate metrics to assess model accuracy.
+Example Scenario:
+
+Data: Historic records of daily temperatures and ice cream sales.
+Training Set: A subset of the data used to train a model.
+Model: Linear regression, producing a function 
+𝑓
+(
+𝑥
+)
+=
+𝑥
+−
+50
+f(x)=x−50.
+Validation:
+
+Validation Set: Another subset of the data.
+Prediction: Use the model to predict sales and compare to actual sales.
+Evaluation Metrics:
+
+Mean Absolute Error (MAE): Average of absolute errors between predicted and actual values.
+Mean Squared Error (MSE): Mean of squared absolute errors.
+Root Mean Squared Error (RMSE): Square root of MSE, representing error in the same units as the label.
+Coefficient of Determination (R²): Proportion of variance in the validation data explained by the model.
+Iterative Training:
+
+Iteratively adjust feature selection, algorithm choice, and algorithm parameters.
+Select the model with the best evaluation metric.
+In the example, linear regression was used to predict ice cream sales based on temperature, with the model's performance evaluated using MAE, MSE, RMSE, and R² metrics.
+
+CLASSIFICATION
+Binary Classification:
+
+Binary classification algorithms aim to make accurate class assignments between two possible labels (0 or 1) using multiple feature (x) values.
+
+Note: Despite its name, logistic regression is used for classification, not regression. The key point is its logistic structure, which defines an S-shaped curve between lower and upper values (0.0 and 1.0 in binary classification).
+
+Multi-Class Classification:
+
+Multi-class classification is used to predict which of several possible classes an observation belongs to. As a supervised machine learning technique, it follows the same iterative training, validation, and evaluation process as regression and binary classification.
+
+Note: Precision is a useful metric for evaluating classification models.
+
+CLUSTERING
+Clustering is an unsupervised machine learning technique where observations are grouped into clusters based on feature similarities, without using predefined labels. In a clustering model, the label is the assigned cluster, determined solely by the features.
+
+Example:
+A botanist records the number of leaves and petals on flowers:
+
+Leaves (x1)	Petals (x2)
+0	5
+0	6
+1	3
+1	3
+1	6
+1	8
+2	3
+2	7
+2	8
+K-Means Clustering Algorithm:
+
+Vectorization: Define coordinates for features (e.g., [x1, x2]).
+Determine k: Choose the number of clusters (e.g., k=3) and plot k centroids randomly.
+Assign Points: Assign each data point to the nearest centroid.
+Move Centroids: Adjust centroids to the center of assigned points.
+Reassign Points: Reassign points to the nearest centroid after adjustment.
+Repeat: Repeat centroid adjustment and point reassignment until clusters stabilize or a maximum number of iterations is reached.
+Evaluating Clusters:
+
+Average Distance to Cluster Center: Average proximity of points to their centroid.
+Average Distance to Other Centers: Average proximity of points to other centroids.
+Maximum Distance to Cluster Center: Furthest point from the centroid.
+Silhouette Score: Value between -1 and 1 indicating cluster separation (closer to 1 is better).
+DEEP LEARNING
+Deep learning is an advanced form of machine learning that attempts to mimic the way the human brain learns. The key to deep learning is to create an artificial neural network that simulates the electrochemical activity in biological neurons using mathematical functions.
+
+![Screenshot 2024-06-22 at 18.43.10.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/5f874e8e-6e04-41c9-9b5e-ad73ba542e12/Screenshot_2024-06-22_at_18.43.10.png)
+
+Neural networks consist of many layers of neurons and work by defining nested functions. This technique, known as deep learning, is used to solve various machine learning problems, including regression, classification, natural language processing, and image processing. Deep learning fits a function to predict a label (y) based on feature (x) values. Each layer of the neural network contains functions operating on x and weight (w) values. The training process involves feeding feature values through layers to compute predictions (ŷ), comparing these predictions to known y values to validate the model, and updating weights to reduce errors. Ultimately, a model with weight values that provide the most accurate predictions is obtained.
+
+Model Training and Evaluation:
+
+In a classification model predicting penguin species, the feature data (x) includes bill length, bill depth, flipper length, and weight. The model takes the x=[x1, x2, x3, x4] vector as input and predicts one of three possible species (Adelie, Gentoo, Chinstrap).
+
+The prediction process is as follows:
+
+The feature vector is fed into the input layer.
+Neurons in each layer compute values using x and w, passing results to the next layer.
+This process continues until the output layer is reached.
+The output layer generates probability values for each of the three species using a function such as softmax. For example, [0.2, 0.7, 0.1] indicates that the penguin is most likely a Gentoo.
+The neural network learns the weights to make the most accurate predictions:
+
+Define training and validation datasets.
+Each neuron's weights are initially assigned randomly.
+The output layer produces predictions.
+Predictions are compared to known y values, and loss is calculated.
+The loss function evaluates each weight's impact on loss and adjusts weights to minimize loss.
+Weight changes are applied back through the layers.
+This process repeats until the loss is minimized.
+Ultimately, the model is trained to make the most accurate predictions.
+
+Note: Although processing individual training samples one by one might seem simpler, in practice, data is processed in batches using matrices and linear algebra computations. Therefore, neural network training is best performed on computers optimized for vector and matrix operations with graphic processing units (GPUs).
+
+AZURE ML
+Azure Machine Learning is a cloud service for training, deploying, and managing machine learning models.
+
+Capabilities:
+
+Discover and prepare data for modeling.
+Train and evaluate machine learning models.
+Save and manage trained models.
+Deploy trained models for use by applications and services.
+Review and implement responsible AI principles and practices.
+The primary resource required for Azure Machine Learning is an Azure Machine Learning workspace, which you can provide within an Azure subscription. Supporting resources, such as storage accounts, container registries, virtual machines, and others, are automatically created as needed.
+
+You can then use Azure ML Studio to:
+
+Import and explore data.
+Create and use compute resources.
+Run code in notebooks.
+Use visual tools to create experiments and pipelines.
+Use automated machine learning to train models.
+View details of trained models, including evaluation metrics, responsible AI information, and training parameters.
+Deploy trained models for real-time and batch inferencing.
+Import and manage models from a comprehensive model catalog.
+Automated ML: Automatically run multiple training jobs using different algorithms and parameters to find the best model.
