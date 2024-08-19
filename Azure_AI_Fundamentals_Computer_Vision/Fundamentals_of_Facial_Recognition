@@ -1,0 +1,72 @@
+Fundamentals of Facial Recognition
+
+- Learn how to use Azure AI Face service to detect and analyze faces in images.
+
+ Face Detection and Analysis
+
+1. Definition:
+    - Utilizes algorithms to find and analyze human faces in images or video content.
+2. Applications:
+    - Security: Used in security applications and smartphone unlocking.
+    - Social Media: Automatically tags known friends in photos.
+    - Smart Monitoring: Detects driver attention and fatigue.
+    - Advertising: Targets ads based on demographic analysis of faces.
+    - Missing Persons: Identifies missing persons in public spaces.
+    - Authentication: Used at access points for identity verification.
+
+ Understanding Face Analysis
+
+1. Face Detection:
+    - Identifies human face regions in images, returning bounding box coordinates.
+2. Face Analysis:
+    - Trains models to detect facial features like nose, eyes, eyebrows, and lips.
+3. Face Recognition:
+    - Uses multiple images of a person to train a model for recognizing known individuals.
+    - Enhances efficiency, security, and customer experience.
+
+ Azure AI Face Recognition Service
+
+1. Services:
+    - Azure AI Vision: Basic face analysis with bounding boxes.
+    - Azure AI Video Indexer: Detects and identifies faces in video.
+    - Azure AI Face: Advanced detection, recognition, and analysis with pre-built algorithms.
+2. Attributes:
+    - Accessories: Detects items like hats, glasses, masks with confidence scores.
+    - Blur: Measures face blur indicating image focus.
+    - Exposure: Determines if the face is under or overexposed.
+    - Glasses: Detects if the person is wearing glasses.
+    - Head Pose: Analyzes face direction in 3D space.
+    - Mask: Detects if a mask is worn.
+    - Noise: Identifies visual noise affecting clarity.
+    - Occlusion: Detects objects blocking the face.
+
+ Responsible AI Usage
+
+1. Responsible AI Standards:
+    - Microsoft enforces a Limited Access policy for Azure AI Face and Azure AI Vision.
+2. Basic Features:
+    - Detects face positions, glasses, obstructions, blur, noise, exposure, and head pose.
+3. Advanced Features (Limited Access):
+    - Compares faces for similarity.
+    - Identifies named individuals in images.
+
+ Azure Face Recognition Resources
+
+1. Resource Types:
+    - Face Recognition: Dedicated to face recognition only.
+    - Azure AI Services: Includes multiple AI services for broader usage and simplified management.
+
+ Tips for Improved Detection Accuracy
+
+1. Image Format: Supports JPEG, PNG, GIF, and BMP.
+2. File Size: Should be 6 MB or smaller.
+3. Face Size Range: 36 x 36 to 4096 x 4096 pixels.
+4. Common Issues: Detection may be impaired by extreme face angles, lighting, and occlusions.
+
+Try vision studio : https://learn.microsoft.com/tr-tr/training/modules/detect-analyze-faces/4-exercise
+
+Notes : 
+
+- The locations of detected faces are indicated by coordinates for a rectangular bounding box
+- Best results are obtained when the faces are full-frontal or as near as possible to full-frontal (impairment to detection)
+- The Face resource has face detections capabilities, and can be used in Vision Studio to understand its capabilities.

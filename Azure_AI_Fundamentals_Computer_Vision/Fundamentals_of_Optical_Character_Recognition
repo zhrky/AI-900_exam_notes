@@ -1,0 +1,53 @@
+Fundamentals of optical character recognition
+
+Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+
+- Learn how to read text in images with Azure AI Vision.
+
+ Optical Character Recognition (OCR) Overview
+
+1. Definition:
+    - OCR enables machines to read text in images, converting it to machine-readable text.
+2. Uses of OCR:
+    - Automates text processing to improve speed and efficiency.
+    - Recognizes printed and handwritten text in images for scenarios like:
+        - Note taking
+        - Digitizing medical records
+        - Scanning historical documents
+        - Processing bank checks
+3. OCR and AI:
+    - Combines computer vision (to "read" text) and natural language processing (to interpret text).
+    - Uses machine learning models to recognize shapes as letters, numerals, punctuation, etc.
+    - Initially used by postal services for automatic mail sorting.
+4. Azure AI Vision's OCR Capabilities:
+    - Extracts machine-readable text from images, PDFs, and TIFF files.
+    - Read API (Read OCR engine) uses advanced recognition models.
+    - Optimized for images with significant text or visual noise.
+5. Read API Structure:
+    - Pages: Each page of text with size and orientation info.
+    - Lines: Lines of text on a page.
+    - Words: Words in a line of text with bounding box coordinates and text.
+6. Setting Up Azure AI Vision:
+    - Create a resource in Azure subscription:
+        - Azure AI Vision: Specific to vision services.
+        - Azure AI Services: General resource including multiple AI services.
+7. Using Azure AI Vision's Read API:
+    - Methods:
+        - Vision Studio
+        - REST API
+        - SDKs: Python, C#, JavaScript
+8. Azure AI Vision Studio:
+    - Provides a GUI for accessing Azure AI Vision APIs without coding.
+    - Requires an Azure AI services resource.
+    - Features:
+        - Optical Character Recognition
+        - Extract text from images
+    - Returns results with bounding box locations and detected text in JSON format.
+    - Ideal for examples; SDK or REST API needed for custom OCR applications.
+
+Try exercise : [Exercise - Read text in Vision Studio - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/read-text-computer-vision/4-read-text-computer-vision)
+
+Notes : 
+
+- An Azure AI services resource supports both Azure AI Vision for text extraction, and Azure AI Language for text analytics.
+- The Read API takes an image and extracts the words, organizing the results by page and line.
