@@ -1,0 +1,98 @@
+Fundamentals of Knowledge Mining and Azure AI Search
+
+- Explore Azure AI Search
+- Create an Azure AI Search index
+- Import data to the index
+- Query the Azure AI Search index
+
+1. Introduction to Information Mining
+    - Information mining involves extracting insights from large volumes of unstructured data.
+    - Azure AI Search is a cloud search service that enables creating user-managed indexes from various data types.
+2. Azure AI Search Capabilities
+    - Uses built-in AI services like image processing, content extraction, and natural language processing.
+    - Allows quick extraction and revelation of insights from large datasets.
+3. Features of Azure AI Search
+    - Accepts data in JSON format from any source.
+    - Provides full-text search and analysis.
+    - AI-powered search with built-in image and text analysis features.
+    - Supports 56 languages and offers phonetic matching and linguistic processing.
+    - Geographical search filtering based on proximity.
+    - Configurable user experience with features like autocomplete, suggestions, and hit highlighting.
+4. Search Solution Components
+    - Data Source: Source of the data, such as Azure Storage or SQL databases.
+    - Index: Structure containing searchable documents.
+    - Indexer: Automates data ingestion and can enrich data with AI skills.
+    - Skillset: Defines AI skills for data enrichment, such as OCR or text translation.
+5. Index Creation
+    - Index schema defines the structure of the data.
+    - Attributes are assigned to fields to specify how they should be searched and displayed.
+    - Data ingestion can be automated using indexers or done manually.
+6. Using Skillsets for Data Enrichment
+    - AI skills like natural language processing and image processing can be added to enrich data.
+    - Pre-built skills include key phrase extraction, text translation, and optical character recognition (OCR).
+7. Persistent Storage of Enriched Data
+    - Enriched data can be stored in a knowledge store for further analysis or processing.
+    - Knowledge store can include table projections for querying and visualizing extracted data or file projections for storing extracted images.
+8. Creating an Index in Azure Portal
+    - Supported data sources include Cosmos DB, Azure SQL, and Azure Storage.
+    - The Data Import Wizard in the Azure portal helps automate the creation of various objects needed for the search infrastructure.
+9. Querying Data in an Index
+    - Queries can be sent as HTTP or REST API requests, with results returned in JSON format.
+    - Supports both simple and full Lucene syntax for queries.
+    - Simple queries consist of search terms and operators, while full Lucene syntax allows for more complex queries.
+10. Monitoring and Validating Data Import
+    - Dashboard provides an overview of system status, document count, and storage usage.
+    - Search Explorer in the portal can be used to inspect the index content and validate search results.
+11. Updating Indexes
+    - Indexes can be updated by creating new ones under different names.
+    - Use the same indexer and data source to re-import data and modify application to use the new index.
+
+ Understanding Indexes:
+
+- Azure AI Search Index: Conceptual container for searchable documents.
+- Index Schema: Defines structure of data within documents, akin to a database table schema.
+- Attributes: Define how fields in documents are searched and displayed.
+
+ Creating an Index Using an Indexer:
+
+- Data Source Requirement: Supported data sources (Cosmos DB, Azure SQL, Azure Storage) must be available.
+- Import Data Wizard: Automates the creation of required objects in Azure portal.
+    - Data Source: Contains connection information.
+    - Index: Physical data structure for full-text search.
+    - Indexer: Configuration object linking data source to the index.
+    - Skillset: Instructions for processing content.
+    - Knowledge Store: Stores AI-enriched output for further analysis or processing.
+
+ Querying Data in an Azure AI Search Index:
+
+- Close Relationship Between Index and Query: Index schema determines which queries can be answered.
+- Query Syntax:
+    - Simple Syntax: Covers common query scenarios, includes terms and logical operators (e.g., coffee -"busy" +"wifi").
+    - Lucene Syntax: Advanced scenarios.
+
+ Key Points in Summary:
+
+- Cloud Search Service: Azure AI Search automates insight extraction from various data types using AI.
+- Built-in AI Capabilities: Utilizes image processing, content extraction, and NLP.
+- Skillsets and Indexers: Enable automated data ingestion and enrichment.
+- Customizable Search Experience: Supports multiple languages, geo-search, and user interface enhancements.
+- Scalable and Managed Service: High availability with 99.9% SLA.
+- Advanced Indexing and Querying: Supports JSON data, AI-enhanced searches, and advanced query capabilities with Lucene syntax.
+
+---
+
+Dizin şeması : 
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/89811092-1633-4ea8-b11f-dab0a6966cb1/Untitled.png)
+
+Dizin öznitelikleri :
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/c795b764-9ba6-445f-ac27-55e637ad671e/Untitled.png)
+
+Explore an Azure AI Search index (UI) :  https://learn.microsoft.com/en-us/training/modules/intro-to-azure-search/6a-exercise
+
+Notes : 
+
+- Azure AI Search is used for full text search over indexes containing alphanumeric content.
+- An indexer serializes a source document into JSON before passing it to a search engine for indexing. An indexer automates several steps of data ingestion, reducing the amount of code you need to write.
+- Azure AI Search can index JSON documents. JSON is also used to define index schemas, indexers, and data source objects.

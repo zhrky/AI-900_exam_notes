@@ -1,0 +1,119 @@
+Fundamentals of Azure AI Document Intelligence
+
+ Document Intelligence: Key Points
+
+Document Intelligence Overview:
+
+- Extends Optical Character Recognition (OCR).
+- Automates extracting, understanding, and recording data from text.
+- Useful for processing receipts, project costs, and accounting purposes.
+
+Example Application:
+
+- Organization processes receipts with document intelligence.
+- Scanned image text converted to digital via OCR.
+- Specific data like vendor name, address, total value, and tax value extracted.
+
+Azure AI Document Intelligence:
+
+- Supports analysis of documents and forms with pre-built and custom models.
+
+Document Intelligence Features:
+
+Document Analysis:
+
+- Based on machine learning models trained to recognize data in text.
+- Extracts text, layout, and key-value pairs.
+- Identifies text positions on a page using bounding box coordinates.
+
+Challenges and Solutions:
+
+- Forms and documents come in various formats.
+- Different models needed for different document types (e.g., tax forms vs. ID documents).
+- Pre-built models for common formats and custom models for unique formats.
+
+Benefits:
+
+- Speeds up text reading and data recording processes.
+- Enhances customer experiences.
+- Improves decision-making.
+
+Azure Receipt Analysis:
+
+Model Types:
+
+1. Pre-Built Models:
+    - Trained to recognize specific fields in common document types like invoices, business cards, IDs.
+    - Extracts details like customer/vendor info, sales/transaction details, ID verification details, health insurance details, business contact info, contract details, tax details.
+2. Custom Models:
+    - Trainable to identify specific fields not covered by pre-built models.
+
+Receipt Model Example:
+
+- Processes receipts by matching field names with values.
+- Identifies data tables, specific fields like dates, phone numbers, addresses, totals.
+- Recognizes various receipt types (thermal, hotel, gas, credit card, parking receipts).
+
+Recognized Fields * :
+
+- Vendor name, address, phone number.
+- Purchase date and time.
+- Item names, quantities, prices.
+- Total, subtotal, tax values.
+- Each field has a confidence level indicating accuracy.
+
+Image Requirements:
+
+- Formats: JPEG, PNG, BMP, PDF, TIFF.
+- Size: <500 MB (paid), <4 MB (free).
+- Resolution: 50x50 to 10000x10000 pixels.
+- PDF: Max 17x17 inches.
+- One receipt per document.
+
+Testing and Using Document Analysis:
+
+- Use Document Intelligence Studio for pre-built and custom models.
+- Create Document Intelligence or Azure AI services resource in Azure subscription.
+- Free tier available with some limitations (e.g., only first two pages of PDF/TIFF processed).
+
+Using the Resource:
+
+- Access the resource using the provided keys and endpoint.
+- Integrate the resource with client applications for document analysis.
+
+Document Intelligence Studio:
+
+- A user interface for testing pre-built models and creating custom models.
+- Enables you to train and evaluate models for specific document types and extraction needs.
+
+Advantages of Document Intelligence:
+
+- Accuracy: High accuracy in recognizing and extracting relevant data from documents.
+- Efficiency: Reduces manual data entry, minimizing errors and speeding up processes.
+- Scalability: Can handle large volumes of documents, making it suitable for businesses with extensive documentation needs.
+- Customization: Allows for the creation of custom models to cater to unique document formats and extraction requirements.
+- Integration: Easy to integrate with existing workflows and systems using Azure's API.
+
+Practical Applications:
+
+- Invoice Processing: Automates extraction of invoice details for faster accounts payable processing.
+- Receipt Management: Streamlines expense reporting by extracting details from receipts.
+- ID Verification: Automates verification processes by extracting data from identification documents.
+- Contract Management: Extracts and organizes key contract details for legal and compliance purposes.
+
+Conclusion:
+Azure AI Document Intelligence offers robust tools for automating the extraction, understanding, and processing of data from a wide range of documents. By leveraging pre-built models and the ability to create custom models, businesses can enhance their operational efficiency, reduce errors, and make informed decisions based on accurately extracted data.
+
+Document Intelligence Studio'daki verilerden ayıklama :  https://learn.microsoft.com/tr-tr/training/modules/analyze-receipts-form-recognizer/4-exercise
+
+Notes : 
+
+- The merchant name and address can be identified using the receipt model. (Look Recognized Field)
+- The receipt analyzer model is available as a service when you create an Azure AI Document Intelligence resource.
+- Both the Azure AI Document Intelligence resource and the Azure AI services resource provide access to Azure AI Document Intelligence.
+
+Merchant :  tüccar
+
+SUMMARY 
+
+Azure AI Document Intelligence provides access to prebuilt and custom models for extracting text from various documents, such as receipts, invoices, IDs, and more.
