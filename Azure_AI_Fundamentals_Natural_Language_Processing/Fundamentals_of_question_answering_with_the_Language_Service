@@ -1,0 +1,75 @@
+Fundamentals of question answering with the Language Service
+
+
+ Conversational AI with Azure AI Language: Key Points
+
+Communication Challenges:
+
+- Instant, personalized responses are expected without reading detailed documents.
+- Support personnel are often overloaded with multiple channel requests.
+
+Conversational AI:
+
+- Enables communication between an AI agent (bot) and a human.
+- Interaction channels include web chat, email, social media, etc.
+
+Azure AI Language for Question Answering:
+
+- Supports building conversational AI solutions with automatic responses.
+- Useful for bot applications that answer customer queries instantly and accurately.
+- Bots can be deployed on various platforms (e.g., websites, social media).
+
+Benefits:
+
+- Provides quick answers, reduces wait times.
+- Allows users to interact at their convenience, regardless of office hours.
+
+Bot Example:
+
+- Uses natural language to provide response options.
+- Escalates to a human only if the query is complex.
+
+Combining Azure Services:
+
+- Azure AI Language: Creates a Q&A knowledge base using the question-answering feature.
+- Azure AI Bot Service: Framework for developing, publishing, and managing bots.
+
+Creating a Q&A Knowledge Base:
+
+1. Azure AI Language Studio:
+    - Use to create, train, publish, and manage Q&A projects.
+    - Can use REST API or SDK for project creation and management.
+2. Defining Questions and Answers:
+    - Source from existing FAQ documents or web pages.
+    - Manually enter and edit questions and answers.
+    - Combine techniques for comprehensive projects.
+    - Assign alternative phrases to questions for better understanding.
+
+Testing the Project:
+
+- Save the Q&A pairs, analyze, and match appropriate answers to questions.
+- Use the built-in testing interface in Language Studio to validate responses.
+
+Building a Bot with Azure AI Bot Service:
+
+1. Create and deploy a bot integrated with the knowledge base.
+2. Use the Microsoft Bot Framework SDK for custom bot development.
+3. Alternatively, use automatic bot creation for easier deployment.
+
+Connecting Channels:
+
+- Enable interaction through multiple channels (web chat, email, Microsoft Teams, etc.).
+- Users can send questions and receive appropriate responses from the knowledge base via any connected channel.
+
+Try this exercise for  question answering with the Language Service :  https://learn.microsoft.com/tr-tr/training/modules/build-faq-chatbot-qna-maker-azure-bot-service/4-exercise
+
+Notes : 
+
+- You can import question and answer pairs from an existing FAQ document into a question answering knowledge base.
+- Question Answering is part of the Azure AI Language service and enables you to create a knowledge base of question and answer pairs
+
+SUMMARY : 
+
+Azure AI Language's custom question answering feature enables you to define and publish a knowledge base of questions and answers with support for natural language querying. When combined with Azure AI Bot Service, you can use a knowledge base to deliver a bot that responds intelligently to user questions over multiple communication channels.
+
+The ability to create conversational AI solutions with these services makes it possible for AI agents to reduce the support workload for human personnel; enabling organizations to provide user support at global scale.

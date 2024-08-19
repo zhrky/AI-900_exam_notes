@@ -1,0 +1,114 @@
+Fundamentals of Azure AI Speech
+
+- Learn about speech recognition and synthesis
+- Learn how to use Azure AI Speech
+
+ Azure AI Speech Capabilities: Key Points
+
+AI Speech Features:
+
+- Manage home and automation systems with voice commands.
+- Receive spoken answers from computers.
+- Create headlines from speech.
+
+Two Essential Features for AI Systems:
+
+1. Speech Recognition: Capturing and interpreting spoken input.
+2. Speech Synthesis: Generating spoken output.
+
+Azure AI Speech:
+
+- Provides speech recognition and synthesis.
+- Convert speech to text, identify speakers, create custom voices, and more.
+
+Understanding Speech Recognition and Synthesis:
+
+Speech Recognition:
+
+- Converts spoken words to data, usually text.
+- Uses multiple models:
+    - Acoustic Model: Transforms sound signals into phonemes.
+    - Language Model: Matches phonemes to words using statistical algorithms.
+- Applications:
+    - Subtitles for pre-recorded or live videos.
+    - Transcripts for phone calls or meetings.
+    - Automatic dictation of notes.
+    - Identifying user input for further processing.
+
+Speech Synthesis:
+
+- Converts text into spoken output.
+- Requires:
+    - Text to be spoken.
+    - Voice to use for speech.
+- Process:
+    - Tokenizes text into words.
+    - Assigns phonetic sounds to words.
+    - Converts phonetic transcription to phonemes.
+    - Synthesizes speech with specific pitch, speed, and volume.
+- Applications:
+    - Spoken responses to user input.
+    - Voice menus for phone systems.
+    - Reading emails or texts aloud in hands-free scenarios.
+    - Announcements in public locations.
+
+Getting Started with Azure Speech Features:
+
+APIs Provided by Azure AI Speech:
+
+1. Speech-to-Text API: Converts speech to text.
+2. Text-to-Speech API: Converts text to spoken output.
+
+Azure Resources for Speech Features:
+
+- Speech Resource: For exclusive use of Azure AI Speech.
+- Azure AI Services Resource: For using speech features alongside other Azure AI services.
+
+Speech-to-Text API:
+
+- Converts real-time or batch audio to text.
+- Sources: live microphone audio or audio files.
+- Based on Microsoft's Universal Language Model.
+- Custom models can be created for specific needs.
+
+Real-Time Transcription:
+
+- Provides live transcription of spoken content.
+- Requires application to listen to audio and send it to the service.
+
+Batch Transcription:
+
+- Transcribes audio files stored on servers or Azure storage.
+- Asynchronous process, scheduled optimally.
+
+Text-to-Speech API:
+
+- Converts text input into audible speech.
+- Can be played through speakers or saved as audio files.
+
+Speech Synthesis Voices:
+
+- Multiple predefined voices available in various languages and regional accents.
+- Neural voices using neural networks for more natural-sounding speech.
+- Custom voices can be created.
+
+Supported Languages:
+
+- Both Speech-to-Text and Text-to-Speech APIs support a variety of languages.
+- For details on supported languages:
+    - [Speech-to-Text languages](https://aka.ms/speech/locale-list)
+    - [Text-to-Speech languages](https://aka.ms/speech/tts/locale-list)
+    
+
+Discover the Speech Studio : https://learn.microsoft.com/tr-tr/training/modules/recognize-synthesize-speech/4-exercise-transcribe-speech-use-azure
+
+Notes : 
+
+- The Text to speech API converts text to audible speech.
+- Azure AI Services resource would support both the Azure AI Speech and Azure AI Language services.
+
+SUMMARY : 
+
+Speech recognition is concerned with taking the spoken word and converting it into text, while speech synthesis is the process of converting text to audible speech. Both of these tasks are supported by Azure AI Speech.
+
+You can find out more about Azure AI Speech in the [service documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service).

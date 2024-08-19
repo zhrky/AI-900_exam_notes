@@ -1,0 +1,133 @@
+
+Fundamentals of Text Analysis with the Language Service
+
+Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+
+- Learn how to use Azure AI Language for text analysis
+
+ Natural Language Processing (NLP) Overview
+
+Definition: NLP deals with understanding and generating human language in written or spoken form.
+
+Text Analysis: Extracts information from unstructured text using NLP techniques.
+
+Uses of NLP: Social media sentiment analysis for marketing campaigns, document summarization, and brand and company name extraction.
+
+Azure AI Language: A cloud-based service for text understanding and analysis, featuring sentiment analysis, key phrase extraction, text summarization, and language understanding.
+
+Text Analysis Principles: Involves statistical analysis of a corpus to understand text meaning and breaking down text into tokens (words, partial words, or word-punctuation combinations).
+
+Tokenization Example: Sentence "We choose to go to the moon." can be tokenized into identifiers.
+
+Tokenization Considerations: Text normalization (removing punctuation and converting to lowercase), stop word removal (excluding common words like "the" and "a"), n-grams (multi-term phrases), and stemming (reducing words to their base forms).
+
+Frequency Analysis: Counting token occurrences to infer text themes, such as identifying frequent words like "new", "go", "space", "moon" in a space travel speech.
+
+TF-IDF (Term Frequency-Inverse Document Frequency): A technique to score words based on their frequency in a document relative to their general frequency across multiple documents.
+
+Machine Learning for Text Classification: Using algorithms like logistic regression to classify text into categories, such as sentiment analysis.
+
+Semantic Language Models: Embedding tokens into vectors (word embeddings) to capture semantic relationships, where related words are close in vector space.
+
+NLP Tasks Supported by Language Models: Text analysis (key term extraction, named entity recognition), sentiment analysis (categorizing text as positive or negative), machine translation (translating text between languages), summarization (summarizing large text bodies), and conversational AI (interpreting natural language input and generating appropriate responses).
+
+Definition: NLP deals with understanding and generating human language in written or spoken form.
+
+Text Analysis: Extracts information from unstructured text using NLP techniques.
+
+Uses of NLP: Social media sentiment analysis for marketing campaigns, document summarization, and brand and company name extraction.
+
+Azure AI Language: A cloud-based service for text understanding and analysis, featuring sentiment analysis, key phrase extraction, text summarization, and language understanding.
+
+Text Analysis Principles: Involves statistical analysis of a corpus to understand text meaning and breaking down text into tokens (words, partial words, or word-punctuation combinations).
+
+Tokenization Example: Sentence "We choose to go to the moon." can be tokenized into identifiers.
+
+Tokenization Considerations: Text normalization (removing punctuation and converting to lowercase), stop word removal (excluding common words like "the" and "a"), n-grams (multi-term phrases), and stemming (reducing words to their base forms).
+
+Frequency Analysis: Counting token occurrences to infer text themes, such as identifying frequent words like "new", "go", "space", "moon" in a space travel speech.
+
+TF-IDF (Term Frequency-Inverse Document Frequency): A technique to score words based on their frequency in a document relative to their general frequency across multiple documents.
+
+Machine Learning for Text Classification: Using algorithms like logistic regression to classify text into categories, such as sentiment analysis.
+
+Semantic Language Models: Embedding tokens into vectors (word embeddings) to capture semantic relationships, where related words are close in vector space.
+
+NLP Tasks Supported by Language Models: Text analysis (key term extraction, named entity recognition), sentiment analysis (categorizing text as positive or negative), machine translation (translating text between languages), summarization (summarizing large text bodies), and conversational AI (interpreting natural language input and generating appropriate responses).
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/09efef6e-8055-4d0f-8e68-1961fa33d67e/8d68d92a-b0cb-4285-a048-3c85aad78d95/Untitled.png)
+
+ Text Analytics with Azure AI Language: Key Points
+
+Azure AI Language: Part of Azure AI services, performs advanced NLP on unstructured text. Key features include:
+
+- Named Entity Recognition: Identifies people, places, events, etc. Customizable for specific categories.
+- Entity Linking: Identifies known entities with Wikipedia links.
+- PII Detection: Detects sensitive personal information, including PHI.
+- Language Detection: Identifies the language of the text and returns a language code (e.g., "en" for English).
+- Sentiment Analysis: Determines if the text is positive, negative, or neutral.
+- Summarization: Identifies and summarizes the most important information.
+- Key Phrase Extraction: Lists main concepts from unstructured text.
+
+Named Entity Recognition and Linking:
+
+- Recognizes entities in text, categorized by type and subtype (e.g., Person, Location, Organization).
+- Supports entity linking to disambiguate entities by providing relevant Wikipedia URLs.
+
+Language Detection:
+
+- Determines the language of each document.
+- Returns language name, ISO 639-1 code, and confidence score.
+
+Sentiment Analysis:
+
+- Uses machine learning models to evaluate text sentiment.
+- Returns scores for positive, neutral, and negative sentiment for each sentence and document.
+
+Key Phrase Extraction:
+
+- Identifies main points in the text.
+- Useful for summarizing feedback and reviews by extracting key phrases.
+
+Creating Azure AI Language Resources:
+
+- Language Resource: For using only Azure AI Language services, managing access and billing separately.
+- Azure AI Services Resource: For using Azure AI Language with other Azure AI services, managing access and billing together.
+
+Try this exercise about Azure AI language :  https://learn.microsoft.com/tr-tr/training/modules/analyze-text-with-text-analytics-service/4-exercise
+
+Notes :  
+
+- Key phrases can be used to identify the main talking points in a text document.
+- The sentiment is most likely the type with the highest confidence score, in this case .6 negative.
+- The service will return NaN when it can't determine the language in the provided text.
+
+SUMMARY :
+
+Azure AI Language provides advanced natural language processing over raw text, and includes four main functions: sentiment analysis, key phrase extraction, language detection, and named entity recognition.
+
+Azure AI Language is an Azure AI service that can perform advanced natural language processing on unstructured text. Its text analysis features include:
+
+1. Named Entity Recognition: Identifies entities such as people, places, and events and can extract custom categories.
+2. Entity Linking: Links recognized entities to Wikipedia for clarification.
+3. Personal Information Detection: Detects sensitive information, including personal health information.
+4. Language Detection: Identifies the language of the text and returns a language code.
+5. Sentiment Analysis: Determines whether the text is positive or negative.
+6. Summarization: Summarizes text by extracting the most important information.
+7. Key Phrase Extraction: Lists the main concepts from unstructured text.
+
+ Examples:
+
+- Entity Recognition: "Seattle" is recognized as a location.
+- Language Detection: Identifying the languages of customer reviews.
+- Sentiment Analysis: Classifying customer reviews as positive or negative.
+- Key Phrase Extraction: Extracting important phrases like "birthday celebration."
+
+ Resource Creation:
+
+To use Azure AI Language, you need to create an appropriate resource in your Azure subscription. You can choose between two types of resources:
+
+- Language Resource: If you only plan to use Azure AI Language services.
+- Azure AI Services Resource: If you want to combine Azure AI Language with other Azure AI services.
+
+These features automate the text analysis process and enhance efficiency.

@@ -1,0 +1,93 @@
+Fundamentals of conversational language understanding
+
+- Learn what conversational language understanding is.
+- Learn about key features, such as intents and utterances.
+- Build and publish a natural-language machine-learning model.
+
+ Conversational Language Understanding with Azure AI Language: Key Points
+
+Turing Test and AI Evolution:
+
+- Alan Turing's Turing Test (Imitation Game) from 1950 assesses if a communication is indistinguishable from human interaction.
+- AI advancements lead to human-like interactions in applications like customer support, booking systems, and home automation.
+
+Understanding Conversational Language:
+
+- AI must accept input (text or speech) and interpret its semantic meaning.
+
+Azure AI Language:
+
+- Microsoft provides Azure AI Language services to understand conversational language.
+- Example: An application that turns devices on/off based on spoken commands.
+- Supports tasks like command and control, end-to-end conversation, and enterprise support.
+
+Key Concepts:
+
+1. Utterances: Example phrases users might say.
+    - Example: "Turn on the fan," "Turn on the light."
+2. Entities: Items referred to in utterances.
+    - Example: "fan" and "light" are entities in "Turn on the fan" and "Turn on the light."
+3. Intents: Goals represented in user utterances.
+    - Example: Both "Turn on the fan" and "Turn on the light" have the intent "TurnOn."
+
+Model Definition:
+
+- Combines intents and entities to create a model.
+- Trained with sample utterances to identify likely intents and entities from user input.
+
+Example Application:
+
+- Intents: Greeting, TurnOn, TurnOff, CheckWeather, None.
+- Sample utterances for each intent and associated entities.
+
+Handling "None" Intent:
+
+- Used for unmatched utterances to provide a general response.
+
+Training the Model:
+
+- Define intents, entities, and sample utterances.
+- Use Language Studio or code to train and manage models.
+
+Model Training Process:
+
+- Train with sample utterances to match natural language to intents and entities.
+- Test and iterate the model to improve accuracy.
+
+Prediction and Deployment:
+
+- Deploy the model on a prediction resource for client applications.
+- Client applications send user input to the model endpoint and receive predicted intents and entities.
+
+Azure Resources for Language Understanding:
+
+1. Azure AI Language: For applications with natural language understanding without machine learning expertise.
+2. Azure AI Services: General resource including language understanding features.
+
+Creating and Training Models:
+
+- Use Language Studio for a web-based interface to define and train models.
+- Can create custom intents and entities or use pre-built domains.
+
+Iterative Process:
+
+- Train, test, and refine the model iteratively for better performance.
+
+Using the Model:
+
+- Client applications connect to the prediction endpoint with authentication to use the model for real-time predictions.
+
+Try this exercise for conversational language understanding:  https://learn.microsoft.com/tr-tr/training/modules/create-language-model-with-language-understanding/4-exercise-create-language-understanding-application
+
+
+Notes : 
+
+- Client applications must connect to the endpoint of the prediction resource, specifying an associated authentication key.
+- The intent encapsulates the task (getting the time) and the entity specifies the item to which the intent is applied (the city)
+- To author a conversational language understanding model, you need an Azure AI Language resource.
+
+SUMMARY : 
+
+You can use conversational language understanding to build a model that predicts intents and entities from natural language utterances. A client application can then use this trained model to respond to natural language user input.
+
+You can find out more about conversational language understanding in the [Azure AI Language documentation](https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/overview).
